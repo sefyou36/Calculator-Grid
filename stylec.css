@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(6,100px);
+    grid-template-areas: "afficheur afficheur afficheur afficheur"
+                         " clear clear delete division"
+                         "sept huit neuf multip"
+                         "four five six moin"
+                         "un two trois plus"
+                         "zero zero point egal"
+}
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.container div[type]:hover{
+    background-color: #dfd9d9;
+    transition: background-color 0.3s ease;
+}
+
+.aff{
+    grid-area: afficheur;
+    background-color: black;
+}
+.cl{
+    grid-area: clear;
+    background-color: gray;
+}
+.del{
+    grid-area: delete;
+    background-color: grey;
+}
+.divi{
+    grid-area: division;
+    background-color: orange;
+}
+.seven{
+    grid-area: sept;
+    background-color: grey;
+}
+.eight{
+    grid-area: huit;
+    background-color: grey;
+}
+.nine{
+    grid-area: neuf;
+    background-color: grey;
+}
+.mult{
+    grid-area: multip;
+    background-color: orange;
+}
+.quatre{
+    grid-area: four;
+    background-color: grey;
+}
+.cinq{
+    grid-area: five;
+    background-color: grey;
+}
+.sx{
+    grid-area: six;
+    background-color: grey;
+}
+.minus{
+    grid-area: moin;
+    background-color: orange;
+}
+.one{
+    grid-area: un;
+    background-color: grey;
+}
+.deux{
+    grid-area: two;
+    background-color: grey;
+}
+.three{
+    grid-area: trois;
+    background-color: grey;
+}
+.pls{
+    grid-area: plus;
+    background-color: orange;
+}
+.zro{
+    grid-area: zero;
+    background-color: grey;
+}
+.pot{
+    grid-area: point;
+    background-color: grey;
+}
+.eg{
+    grid-area: egal;
+    background-color: orange;
+}
