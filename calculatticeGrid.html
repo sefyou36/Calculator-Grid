@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylec.css">
     <title>Calculatrice</title>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <div class="afficheur aff"></div>
-        <div class="clear cl" type="button">C</div>
-        <div class="delete del" type="button">del</div>
-        <div class="division divi" type="button">/</div>
-        <div class="sept seven" type="button">7</div>
-        <div class="huit eight" type="button">8</div>
-        <div class="neuf nine" type="button">9</div>
-        <div class="multip mult" type="button">X</div>
-        <div class="four quatre" type="button">4</div>
-        <div class="five cinq" type="button">5</div>
-        <div class="six sx" type="button">6</div>
-        <div class="moin minus" type="button">-</div>
-        <div class="un one" type="button">1</div>
-        <div class="two deux" type="button" >2</div>
-        <div class="trois three" type="button">3</div>
-        <div class="plus pls" type="button">+</div>
-        <div class="zero zro" type="button">0</div>
-        <div class="point pot" type="button">.</div>
-        <div class="egal eg" type="button">=</div>
+        <div class="afficheur aff" id="screen"></div>
+        <div class="clear cl">C</div>
+        <div class="delete del">del</div>
+        <div class="division divi sign" value="/">&#247;</div>
+        <div class="multip mult sign" value="x">&#215;</div>
+        <div class="moin minus sign" value="-">&#8722;</div>
+        <div class="plus pls sign" value="+">&#43;</div>
+        <div class="egal eg" >&#61;</div>
+        <div class="sept seven numbers" value="7">7</div>
+        <div class="huit eight numbers" value="8">8</div>
+        <div class="neuf nine numbers" value="9">9</div>
+        <div class="four quatre numbers" value="4">4</div>
+        <div class="five cinq numbers" value="5">5</div>
+        <div class="six sx numbers" value="6">6</div>
+        <div class="un one numbers" value="1">1</div>
+        <div class="two deux numbers" value="2" >2</div>
+        <div class="trois three numbers" value="3">3</div>
+        <div class="zero zro  numbers" value="0">0</div>
+        <div class="point pot numbers"  value=".">.</div>
     </div>
-    
+
+
+    <script src="/index.js"></script>
 </body>
 </html>

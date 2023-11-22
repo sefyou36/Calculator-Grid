@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(75, 103, 103);
 }
 
 .container{
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(6,100px);
@@ -30,9 +32,11 @@
     transition: background-color 0.3s ease;
 }
 
+
 .aff{
     grid-area: afficheur;
     background-color: black;
+   
 }
 .cl{
     grid-area: clear;
@@ -106,3 +110,11 @@
     grid-area: egal;
     background-color: orange;
 }
+
+#screen{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
